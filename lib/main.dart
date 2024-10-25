@@ -14,6 +14,18 @@ class CalcApp extends StatefulWidget {
 class _CalcAppState extends State<CalcApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Calculadora",
+      home: Scaffold(
+        backgroundColor: Color(0xFF283637),
+        body: Container(
+          padding: EdgeInsets.all(12),
+          child: Column(
+            
+          ),
+        ),
+      ),
+    );
   }
 }
