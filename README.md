@@ -1,6 +1,6 @@
 # calculadora_flutter
 
-A new Flutter project.
+Este repositorio contiene un proyecto base de flutter, el framework de desarrollo móvil multiplataforma de Google.
 
 ## Getting Started
 
