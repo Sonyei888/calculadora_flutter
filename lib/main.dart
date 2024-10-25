@@ -1,3 +1,4 @@
+import 'package:calculadora_flutter/widgets/CalcButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -48,11 +49,16 @@ class _CalcAppState extends State<CalcApp> {
                             const TextStyle(fontSize: 48, color: Colors.white)),
                   )),
                 ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  
+                ],
               )
             ],
           ),
         ),
-        
       ),
     );
   }
