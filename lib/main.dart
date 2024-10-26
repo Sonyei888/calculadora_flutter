@@ -1,6 +1,7 @@
 import 'package:calculadora_flutter/widgets/CalcButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:math_expressions/math_expressions.dart';
 
 void main() {
   runApp(const CalcApp());
@@ -29,6 +30,17 @@ class _CalcAppState extends State<CalcApp> {
       _expression = "";
     });
   }
+
+  void evaluate(String text) {
+    Parser p = Parser();
+    Expression exp = p.parse(_expression);
+    ContextModel cm = ContextModel();
+     setState(() {
+      _history = _expression;
+      _expression = exp.evaluate(EvaluationType.REAL, cm).toString();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -189,7 +201,7 @@ class _CalcAppState extends State<CalcApp> {
                   ),
                   CalcButton(
                     text: "=",
-                    callback: allClear,
+                    callback: evaluate,
                     textSize: 20,
                   )
                 ],
