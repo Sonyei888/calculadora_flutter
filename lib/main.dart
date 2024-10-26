@@ -16,6 +16,12 @@ class CalcApp extends StatefulWidget {
 class _CalcAppState extends State<CalcApp> {
   String _history = "";
   String _expression = "";
+
+   void clear(String text) {
+    setState(() {
+      _expression = "";
+    });
+  }
   
   void allClear(String text){
     setState(() {
@@ -40,7 +46,7 @@ class _CalcAppState extends State<CalcApp> {
                 child: Padding(
                   padding: const EdgeInsets.only(right: 12),
                   child: Text(
-                    "Historial",
+                    _history,
                     style: GoogleFonts.rubik(
                         textStyle: const TextStyle(
                             fontSize: 24, color: Color(0xFF545F61))),
@@ -52,7 +58,7 @@ class _CalcAppState extends State<CalcApp> {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: (Text(
-                    "+",
+                    _expression,
                     style: GoogleFonts.rubik(
                         textStyle:
                             const TextStyle(fontSize: 48, color: Colors.white)),
@@ -71,7 +77,7 @@ class _CalcAppState extends State<CalcApp> {
                   CalcButton(
                     bgcolor: 0xffE3303A,
                     text: "C",
-                    callback: allClear,
+                    callback: clear,
                     textSize: 20,
                   ),
                   CalcButton(
