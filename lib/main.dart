@@ -14,6 +14,9 @@ class CalcApp extends StatefulWidget {
 }
 
 class _CalcAppState extends State<CalcApp> {
+  void allClear(String text){
+
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -53,6 +56,30 @@ class _CalcAppState extends State<CalcApp> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
+                  CalcButton(
+                    bgcolor: 0xFF00BF45,
+                    text: "Ac",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    bgcolor: 0xFF00BF45,
+                    text: "c",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    bgcolor: 0xFF00BF45,
+                    text: "%",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    bgcolor: 0xFF00BF45,
+                    text: "/",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
                   
                 ],
               )
