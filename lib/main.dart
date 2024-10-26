@@ -40,6 +40,13 @@ class _CalcAppState extends State<CalcApp> {
       _expression = exp.evaluate(EvaluationType.REAL, cm).toString();
     });
   }
+   void numClick(String text) {
+    setState(() {
+      
+        _expression += text;
+      
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -94,12 +101,12 @@ class _CalcAppState extends State<CalcApp> {
                   ),
                   CalcButton(
                     text: "%",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "/",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   
@@ -110,22 +117,22 @@ class _CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: "7",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "8",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "9",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "*",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   
@@ -136,22 +143,22 @@ class _CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: "4",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "5",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "6",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "-",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   )
                 ],
@@ -161,22 +168,22 @@ class _CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: "1",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "2",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "3",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "+",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   )
                 ],
@@ -186,17 +193,17 @@ class _CalcAppState extends State<CalcApp> {
                 children: <Widget>[
                   CalcButton(
                     text: ".",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "0",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
                     text: "00",
-                    callback: allClear,
+                    callback: numClick,
                     textSize: 20,
                   ),
                   CalcButton(
