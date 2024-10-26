@@ -14,8 +14,14 @@ class CalcApp extends StatefulWidget {
 }
 
 class _CalcAppState extends State<CalcApp> {
+  String _history = "";
+  String _expression = "";
+  
   void allClear(String text){
-
+    setState(() {
+      _history = "";
+      _expression = "";
+    });
   }
   @override
   Widget build(BuildContext context) {
@@ -64,7 +70,7 @@ class _CalcAppState extends State<CalcApp> {
                   ),
                   CalcButton(
                     bgcolor: 0xffE3303A,
-                    text: "c",
+                    text: "C",
                     callback: allClear,
                     textSize: 20,
                   ),
