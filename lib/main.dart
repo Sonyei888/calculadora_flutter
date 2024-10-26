@@ -63,24 +63,123 @@ class _CalcAppState extends State<CalcApp> {
                     textSize: 20,
                   ),
                   CalcButton(
-                    bgcolor: 0xFF00BF45,
+                    bgcolor: 0xffE3303A,
                     text: "c",
                     callback: allClear,
                     textSize: 20,
                   ),
                   CalcButton(
-                    bgcolor: 0xFF00BF45,
                     text: "%",
                     callback: allClear,
                     textSize: 20,
                   ),
                   CalcButton(
-                    bgcolor: 0xFF00BF45,
                     text: "/",
                     callback: allClear,
                     textSize: 20,
                   ),
                   
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  CalcButton(
+                    text: "7",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "8",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "9",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "*",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  
+                ],
+              ),
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  CalcButton(
+                    text: "4",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "5",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "6",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "-",
+                    callback: allClear,
+                    textSize: 20,
+                  )
+                ],
+              ),
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  CalcButton(
+                    text: "1",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "2",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "3",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "+",
+                    callback: allClear,
+                    textSize: 20,
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  CalcButton(
+                    text: ".",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "0",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "00",
+                    callback: allClear,
+                    textSize: 20,
+                  ),
+                  CalcButton(
+                    text: "=",
+                    callback: allClear,
+                    textSize: 20,
+                  )
                 ],
               )
             ],
